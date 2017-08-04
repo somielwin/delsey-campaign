@@ -1,0 +1,448 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Delsey Hongkong Campaign</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="https://tools.propelrr.com/assets/campaigns/delseyhkcampaign/css/style.css" media="all"/>
+<link  rel="stylesheet" type="text/css" href="https://tools.propelrr.com/assets/campaigns/delseyhkcampaign/css/coppie.css">
+<style>
+   
+   .form-wrapper.preload-overlay .wavy-loader {
+      display: block !important;
+   }
+   
+   .limit-field input[type="text"] {
+      border-left: none !important;
+      border-top: none !important;
+      border-right: none !important;
+   }
+   .meme-text-desktop {
+		width: 100%;
+	    height: auto;
+	    display: block;
+	    position: absolute;
+	    top: 0;
+   }
+   textarea, input[type=text], input[type=tel], input[type=email], select {
+   		border: 2px solid #efdc93 !important;
+   }
+   textarea:focus, input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus {
+   		border: 2px solid #ffaf25 !important;
+   }
+   hr.coolhr {
+	   	height: 6px;
+		background: url(https://tools.propelrr.com/assets/campaigns/delseyhkcampaign/img/hr-11.png) repeat-x 0 0;
+	    border: 0;
+	    margin: 0px auto 15px;
+   }
+
+   /** ////////// MEME ///////////////*/
+
+	img.meme-text-desktop {
+	  left: -10000px;
+	  top: -10000px;
+	  position: absolute;
+	}
+
+	/*.cr-boundary {
+		display:block;
+		top:140px;
+		left: 0px;
+	}*/
+	.cr-boundary {
+		border-radius: 50%;
+		margin-top: 4px;
+	}
+	.croppie-container .cr-slider-wrap {
+		top: -20px;
+	    position: relative;
+	    z-index: 1111;
+	    
+	}
+	
+	.croppie-container {
+	   padding:0px 30px;
+	}
+
+	.meme-text-circle {
+		position: absolute;
+        top: 82%;
+	    width: 100%;
+	    height: 100px;
+	    margin: 0 auto;
+	    padding: 0px 15px;
+	    /* background: #ccc; */
+	    text-align: center;
+	    color: #fff;
+	    font-size: 35px;
+	    text-shadow: 0px 0px 1px #333, 0px 0px 1px #333, 0px 0px 1px #333;
+	    text-wrap:normal;
+	    word-wrap: break-word;
+	}
+	.meme-text-circle span {
+		line-height: 12px;
+	}
+	.img-backdrop {
+		width: 100%; height: 712px; display:block; position: relative;
+	}
+	#upload-demo {
+		position: absolute; top: 151px;
+		width:100%;
+	}
+	#renderedCanvas {
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+	.image-result-section {
+		position: absolute; top: 0px;
+		width: 100%;
+		height: 377px;
+	}
+	.image-result-section div {
+		position: relative;
+		height: 377px;
+	}
+	.imag-croppie-result { 
+	    width: 83%;
+	    height: 377px;
+	    position: relative;
+	    top: 176px;
+	    margin-left: 42px;
+	    border-top-left-radius: 174px;
+		border-top-right-radius: 174px;
+		border-bottom-right-radius: 174px;
+		border-bottom-left-radius: 174px;
+	    border: 0px;
+	    margin: 0px auto;
+    	margin-left: 33px;
+    	display: none;
+	}
+	.cr-boundary, .cr-vp-circle {
+		width: 100%;
+		min-width: auto;
+		max-width: auto;
+	}
+	.croppie-container .cr-viewport {
+		border: 0px;
+		box-shadow: none;
+	}
+
+	.error-message {
+		color: red;
+		font-size: 12px;
+		margin-top: 5px;
+		display: none;
+	}
+
+	.input-wrap.error > label {
+		color: #333 !important;
+	}
+
+	.input-wrap.error .error-message {
+		display: block !important;
+	}
+
+	.input-wrap.error input[type="text"], .input-wrap.error input[type="email"], .input-wrap.error input[type="tel"], .input-wrap.error textarea {
+		border: 1px solid red !important;
+	}
+
+	.input-wrap .limit-field input[type="text"] {
+		border: none !important;
+		border-bottom: 2px solid #efdc93 !important;
+	}
+
+	.gi-btn-wrapper {
+		position: absolute;
+	    bottom: 0;
+	    left: 0;
+	    padding:8px 10px 5px 10px;
+	    z-index: 99;
+	    width: 100%;
+	    background: rgba(0, 0, 0, 0.4);
+	}
+
+	.gi-btn-wrapper a {
+		display: inline-block;
+		color: #ccc;
+		margin-right: 15px;
+		font-weight: bold;
+	}
+
+	.gi-btn-wrapper a:hover {
+		text-decoration: underline;
+	}
+
+	.gi-btn-wrapper a:before {
+		content: '';
+		display: inline-block;
+		height: 14px;
+		margin: 0 6px -3px 0;
+		width: 14px;
+		vertical-align: top;
+	}
+
+	.gi-btn-wrapper a.gi-likes:before {
+		background-image: url('https://tools.proplrr.com/eoncampaign/img/ZM0cVKM3occ.png');
+	    background-repeat: no-repeat;
+	    background-size: auto;
+	    background-position: -47px -117px;
+	}
+
+	.gi-btn-wrapper a.gi-shares:before {
+		background-image: url('https://tools.propelrr.com/eoncampaign/img/ZM0cVKM3occ.png');
+		background-repeat: no-repeat;
+		background-size: auto;
+		background-position: -45px -134px;
+	}
+	
+	.gi-text {
+	   background: #117c5e;
+	   color: #fff;
+	}
+	
+	.gi-wrap {
+	   padding-bottom:0;
+	}
+	/** mobile **/
+	
+	/** mobile **/
+
+	.wrap-yellow {
+		background: #fecc0b;
+		color: #fff;
+		margin: 35px -15px 0;
+		padding: 16px;
+	}
+   .popup-thankyou .popup-content {
+      width: 100% !important;
+   }
+
+   
+   .flex-container .gi-image {
+	padding-bottom: 178%;
+}
+   
+   .input-wrap select {
+      padding:5px 15px !important;
+      height:35px;
+   }
+</style>
+
+<link rel="stylesheet" type="text/css" href="https://tools.propelrr.com/assets/campaigns/delseyhkcampaign/css/mobile.css">
+<script src="https://tools.propelrr.com/assets/campaigns/delseyhkcampaign/js/html5.js"></script>
+<script type="text/javascript">
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	} else {
+		top.location.href="http://bit.ly/2vpyt2D";
+	}
+</script>
+</head>
+<body>
+<section id="main-container">
+	<div class="popup-wrap popup-opt-in">
+		<div class="popup-content">
+			<div class="thankyou-thankyou">
+				<h2>Confirm?<br></h2><br>
+				<a href="#" class="btn form-submit">OK</a>
+				<a href="#" class="btn btn-ghost">Cancel</a>
+			</div>
+		</div>
+	</div>
+	<div class="popup-wrap popup-thankyou">
+		<div class="popup-content">
+			<a href="#" class="close-text"><i class="fa fa-times" aria-hidden="true"></i></a>
+			<div class="thankyou-page">
+				<h2>Thanks for submitting your selfie.</h2>
+				<p>Save 15% off with the coupon on your next purchase in selected Delsey stores</p>
+				<div class="discount-coupon">
+					<!--<img src="https://tools.propelrr.com/assets/campaigns/delseyhkcampaign/img/delsey-logo.png" alt="">-->
+					<p><span class="discount-coupon-text">15%</span> Discount Code: </p>
+					<h2></h2>
+					<p style="font-size: 12px;">*For regular priced items only</p>
+				</div>
+					<p style="font-size:12px; font-style: italic; margin-bottom: 15px;"><em>*Screenshot and present this to a participating store to claim your discount.</em></p>
+				   <div class="wrap-yellow">
+					<p style="font-weight: bold; font-size: 1.5em; text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);">Want to see if you can claim a FREE limited edition Delsey Minion bag?<br> <br></p>
+					<a href="#" class="btn btn-proceed" style="background: #117c5e;">Next</a>
+					<a href="#" class="btn btn-ghost">Cancel</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup-wrap popup-thankyou-exceed">
+		<div class="popup-content">
+			<a href="#" class="close-text"><i class="fa fa-times" aria-hidden="true"></i></a>
+			<div class="thankyou-page">
+				<h2>Oops! We've run out of discount coupons for now.</h2>
+				<p>No worries, though. Click next for a chance to get a LIMITED EDITION Delsey bag!</p>
+				<a href="#" class="btn btn-proceed">Next</a>
+				<a href="#" class="btn btn-ghost">Cancel</a>
+			</div>
+		</div>
+	</div>
+	<div class="popup-wrap popup-redeem">
+		<div class="popup-content">
+			<div class="thankyou-thankyou">
+				<div class="thankyou-page">
+				<h2>Thank you for filling out the form. </h2>
+				<div class="discount-coupon">
+					<!--<img src="https://tools.propelrr.com/assets/campaigns/delseyhkcampaign/img/delsey-logo.png" alt="">-->
+					<p>GIFT CODE: </p>
+					<h2></h2>
+				</div>
+				<p style="font-size:12px; font-style: italic; margin-bottom: 15px;">Show this code to claim your limited edition Delsey Minion bag at the Delsey store you’ve chosen.</p>
+				<h2 style="margin-bottom: 15px">SEE YOU SOON!</h2>
+				<a href="#" class="btn btn-done">Done</a>
+			</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup-wrap popup-redeem-exceed">
+		<div class="popup-content">
+			<div class="thankyou-thankyou">
+				<div class="thankyou-page">
+				<h4>Thank you for joining, but all the Minion bags are fully redeemed! Gru took them all to vacation! </h4>
+				<a href="#" class="btn form-submit btn-end">OK</a>
+			</div>
+			</div>
+		</div>
+	</div>
+
+	<section id="main-wrapper">
+		<div class="container">
+		
+			<div class="tabs-menu">
+				<ul>
+					<li class="active"><a href="#formid">Entry</a></li>
+					<li><a href="#gallery" id="gallery-menu">Gallery</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="formid" class="tabs-item" style="display: block;">
+			<div class="container">
+				<div class="intro-mainwrapper">
+					<div class="banner-img"><img src="https://tools.propelrr.com/assets/campaigns/delseyhkcampaign/img/Back-to-school-Campaign-v3.jpg" alt=""></div>
+					<div class="form-wrapper">
+						<div class="intro-text text-center">
+							<p style="margin-bottom:10px; "><h3 style="font-size: 30px !important;">Save 15% off with the coupon on your next purchase in selected Delsey stores</h3></p>
+						</div>
+						<div class="wavy-loader">
+							<span></span><span></span><span></span>
+						</div>
+						<form id="first-form" method="post" action="" class="contest-form">
+							<input type="hidden" id="fbuserid" value="">
+							<div class="divider">
+								<div class="fl-left w50">
+									<div class="input-wrap">
+										<!-- <label>Upload your photo.</label> -->
+										<div class="file-field input-field">
+											<div class="btn full-width text-center">
+												<span>UPLOAD PHOTO</span>
+												<input type="file" id="imgInp" >
+											</div>
+											<p class="error-message"> Please upload a valid photo.</p>
+											<div class="file-path-wrapper">
+												<!-- <input class="file-path validate" type="text"> -->
+											</div>
+										</div>
+									</div>	
+									<div class="input-wrap captionfield">
+										<label>Caption *</label>
+										
+										<textarea colspan="6" rowspan="6" maxlength="50" name="captionText" id="captionText" onkeydown="this.value = removeEmojis(this.value); limitText(this.form.captionText,this.form.countdown,50);"  onkeyup="this.value = removeEmojis(this.value); limitText(this.form.captionText,this.form.countdown,50);"  onchange="this.value = removeEmojis(this.value); limitText(this.form.captionText,this.form.countdown,50);" onkeypress="this.value = removeEmojis(this.value); limitText(this.form.captionText,this.form.countdown,50);" onpaste="this.value = removeEmojis(this.value); limitText(this.form.captionText,this.form.countdown,50);" onpropertychange="this.value = removeEmojis(this.value); limitText(this.form.captionText,this.form.countdown,50);"></textarea>
+										<p style="font-size: 14px; text-style: italic; margin-top: 5px;">Don't forget to include #BackToSchoolwithDelsey #DelseyHK</p>
+										<p class="error-message"> This field is required*</p>
+										<p class="caption-info"> <span class="limit-field"><input readonly type="text" name="countdown" class="countdown topMemeText" size="3" value="50">characters left.</span></p><br>
+									</div>
+									<div class="input-wrap text-center"> 
+										<input type="submit" class="btn" name="" value="Submit">
+										<p style="font-size: 14px; text-style: italic; text-align:left; margin-top: 15px;">By submitting your entry, you agree that it will be featured and shared on Delsey HK’s gallery and Facebook page.</p>
+									</div>
+								</div>
+								<div class="fl-right w50">
+									<section id="renderedCanvas">
+										<img src="https://tools.propelrr.com/assets/campaigns/delseyhkcampaign/img/selfie-screen.png" class="img-backdrop">
+										<div class="image-result-section">
+											<div><img class="imag-croppie-result"></div>
+										</div>
+										<span id="upload-demo"></span>
+										<div class="meme-text-circle">
+											<span></spam>
+										</div>		
+									</section>		
+								</div>
+							</div>						
+						</form>
+						<form id="second-form" method="post" action="" class="redeem-form hideMe">
+							
+							<div class="full-width">
+							<p style="font-size: 18px !important; border: 0px;margin:0px;padding: 0px;margin-bottom: 15px;">Please enter your particulars.</p>
+							<hr class="coolhr">
+								<div class="divider">
+									<div class="input-wrap full">
+										<label>Name:</label>
+										<input type="text" id="full-name" name="name" onchange="this.setAttribute('value', this.value);">
+										<input type="hidden" id="entry_id" name="entry_id">
+										<p class="error-message">Please input your Name</p>
+									</div>
+									<div class="input-wrap full">
+										<label>E-mail Address</label>
+										<input type="email" id="account-email" name="email" onchange="this.setAttribute('value', this.value);">
+									</div>
+									<div class="input-wrap full">
+										<label>Contact Number</label>
+										<input type="tel" id="contact-num" name="contact-num" placeholder="" maxlength="15" onchange="this.setAttribute('value', this.value);"/>
+									</div>
+
+									<div class="input-wrap full">
+										<label>Preferred Store</label>
+										<select name="store" id="store">
+											<option value="Mody Road Store 麼地道">Mody Road Store 麼地道</option>
+											<option value="Parklane Store 柏麗購物大道">Parklane Store 柏麗購物大道</option>
+											<option value="Times Square Store 時代廣場">Times Square Store 時代廣場</option>
+											<option value="Star House 星光行">Star House 星光行</option>
+											<option value="Plaza Hollywood 荷里活廣場">Plaza Hollywood 荷里活廣場</option>
+											<option value="Hong Kong Station 香港站">Hong Kong Station 香港站</option>
+											<!--<option value="AEON Whampoa Garden 黃埔 AEON">AEON Whampoa Garden 黃埔 AEON</option>-->
+											<option value="Telford Plaza 德福廣場">Telford Plaza 德福廣場</option>
+											<option value="Mira Place One 美麗華廣場">Mira Place One 美麗華廣場</option>
+										</select>
+									</div>
+								</div>
+								<div class="input-wrap text-center"> 
+									<input type="submit" class="btn" name="" value="Submit">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="gallery" class="tabs-item" >
+			<div class="wavy-loader">
+				<span></span><span></span><span></span>
+			</div>
+			<div class="flex-container">
+				<p style="margin-top:40px;" class="no-approved">No Approved Entries Yet.</p>
+			</div>
+			<div class="btn-wrap bp-center bp-rel load-more-cont">
+				<a href="#" class="load-more-btn"> Load More</a>
+			</div>
+			
+		</div>
+	</section>
+	<div id="renderHidden"></div>
+
+</section>
+<footer></footer>
+<script src="https://tools.propelrr.com/assets/campaigns/delseyhkcampaign/js/lib/jquery.min.js"></script>
+<script src="https://tools.propelrr.com/assets/campaigns/delseyhkcampaign/js/croppie.min.js"></script>
+<script src="https://tools.propelrr.com/assets/campaigns/delseyhkcampaign/js/html2canvas.js"></script>
+<script src="https://tools.propelrr.com/assets/campaigns/delseyhkcampaign/js/custom.js"></script>
+</body>
+</html>
