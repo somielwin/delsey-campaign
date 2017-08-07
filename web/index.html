@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="https://tools.propelrr.com/assets/campaigns/delseyhkcampaign/css/style.css" media="all"/>
 <link  rel="stylesheet" type="text/css" href="https://tools.propelrr.com/assets/campaigns/delseyhkcampaign/css/coppie.css">
 <style>
-    
+   
    .form-wrapper.preload-overlay .wavy-loader {
       display: block !important;
    }
@@ -64,6 +64,10 @@
 	    
 	}
 	
+	.croppie-container {
+	   padding:0px 30px;
+	}
+
 	.meme-text-circle {
 		position: absolute;
         top: 82%;
@@ -83,7 +87,7 @@
 		line-height: 12px;
 	}
 	.img-backdrop {
-		width: 100%; height: 712px; display:block; position: relative;
+		width: 100%; height: auto; display:block; position: relative;
 	}
 	#upload-demo {
 		position: absolute; top: 151px;
@@ -229,14 +233,15 @@
    }
 </style>
 
-<link rel="stylesheet" type="text/css" href="https://tools.propelrr.com/assets/campaigns/delseyhkcampaign/css/mobile.css">
-<script src="https://tools.propelrr.com/assets/campaigns/delseyhkcampaign/js/html5.js"></script>
 <script type="text/javascript">
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 	} else {
-		top.location.href="http://bit.ly/2vpyt2D";
+		top.location.href="http://bit.ly/2wyjDUE";
 	}
 </script>
+
+<link rel="stylesheet" type="text/css" href="https://tools.propelrr.com/assets/campaigns/delseyhkcampaign/css/mobile.css">
+<script src="https://tools.propelrr.com/assets/campaigns/delseyhkcampaign/js/html5.js"></script>
 </head>
 <body>
 <section id="main-container">
@@ -265,7 +270,7 @@
 				   <div class="wrap-yellow">
 					<p style="font-weight: bold; font-size: 1.5em; text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);">Want to see if you can claim a FREE limited edition Delsey Minion bag?<br> <br></p>
 					<a href="#" class="btn btn-proceed" style="background: #117c5e;">Next</a>
-					<a href="#" class="btn btn-ghost">Cancel</a>
+					<a href="#" class="btn btn-ghost btn-nil">Cancel</a>
 				</div>
 			</div>
 		</div>
@@ -356,7 +361,7 @@
 										<p class="caption-info"> <span class="limit-field"><input readonly type="text" name="countdown" class="countdown topMemeText" size="3" value="50">characters left.</span></p><br>
 									</div>
 									<div class="input-wrap text-center"> 
-										<input type="submit" class="btn" name="" value="Submit">
+										<input type="submit" id="submit-btn" class="btn" name="" value="Submit">
 										<p style="font-size: 14px; text-style: italic; text-align:left; margin-top: 15px;">By submitting your entry, you agree that it will be featured and shared on Delsey HK’s gallery and Facebook page.</p>
 									</div>
 								</div>
