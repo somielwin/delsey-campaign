@@ -233,6 +233,21 @@
       padding:5px 15px !important;
       height:35px;
    }
+
+   .banner-img-mobile {
+   	display: none !important;
+   }
+
+   @media (max-width: 767px){
+   		.banner-img-mobile {
+	   		display: block !important;
+	   	}
+
+	   	.banner-img-desk {
+	   		display: none !important;
+	   	}
+   }
+
 </style>
 <script type="text/javascript">
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
@@ -349,7 +364,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<div id="formid" class="tabs-item" style="display: block;">
 			<div class="container">
 				<div class="intro-mainwrapper">
-					<div class="banner-img"><img src="https://tools.propelrr.com/assets/campaigns/delseyhkcampaign/img/Back-to-school-Campaign-v3.jpg" alt=""></div>
+					<div class="banner-img">
+						<img class="banner-img-desk" src="https://tools.propelrr.com/assets/campaigns/delseyhkcampaign/img/Back-to-school-Campaign-v3.jpg" alt="">
+						<img class="banner-img-mobile" src="http://tools.propelrr.com/assets/campaigns/delseyhkcampaign/img/Back-To-School-Mobile-Banner-v3.jpg" alt="">
+					</div>
 					<div class="form-wrapper">
 						<div class="intro-text text-center">
 							<p style="margin-bottom:10px; "><h3 style="font-size: 30px !important;">Show your best back-to-school-ready selfie! </h3></p>
