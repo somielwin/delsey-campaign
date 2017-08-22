@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="robots" content="noindex,follow" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <title>Show us your best smile for a chance to get exciting gifts!</title>
 <meta property="og:title" content="Show us your best smile for a chance to get exciting gifts!" />
 <meta property="og:description" content="Submit your selfie today and get a chance to win a limited edition DELSEY Minion bag."/>
@@ -90,6 +91,7 @@
 		position: absolute; top: 150px;
 		width:100%;
 		height: 410px;
+		left: 0;
 	}
 
 	/*@media (max-width: 767px) {
@@ -234,6 +236,9 @@
    .input-wrap select {
       padding:5px 15px !important;
       height:35px;
+      -webkit-appearance: none;
+      appearance: none;
+      border-radius: 0;
    }
 
    .banner-img-mobile {
@@ -248,7 +253,25 @@
 	   	.banner-img-desk {
 	   		display: none !important;
 	   	}
+
+
+	   .intro-text {
+	   		padding: 0 0;
+	   }
+
+	   .intro-mainwrapper {
+	   	margin-top: 0;
+	   }
+
+	   .tabs-item {
+	   	padding: 0;
+	   }
+
+	   .form-wrapper {
+	   	padding: 10px 15px;
+	   }
    }
+
 
 </style>
 <script type="text/javascript">
@@ -259,7 +282,7 @@
 </script>
 
 
-<link rel="stylesheet" type="text/css" href="https://tools.propelrr.com/assets/campaigns/delseyhkcampaign/css/mobile.css">
+<!-- <link rel="stylesheet" type="text/css" href="https://tools.propelrr.com/assets/campaigns/delseyhkcampaign/css/mobile.css"> -->
 <script src="https://tools.propelrr.com/assets/campaigns/delseyhkcampaign/js/html5.js"></script>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -372,7 +395,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					</div>
 					<div class="form-wrapper">
 						<div class="intro-text text-center">
-							<p style="margin-bottom:10px; "><h3 style="font-size: 30px !important;">Show your best back-to-school-ready selfie! </h3></p>
+							<p style="margin-bottom:10px; "><h3 style="font-size: 24px !important;">Show your best back-to-school-ready selfie! </h3></p>
 						</div>
 						<div class="wavy-loader">
 							<span></span><span></span><span></span>
@@ -398,46 +421,49 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 												<!-- <input class="file-path validate" type="text"> -->
 											</div>
 										</div>
-                          </div>
-                          <div class="input-wrap">
-										<label>Preferred Store to Redeem Discount</label>
-										<select name="store" id="coupon_store">
-											<!--<option value="Mody Road Store 麼地道">Mody Road Store 麼地道</option>
-											<option value="Parklane Store 柏麗購物大道">Parklane Store 柏麗購物大道</option>
-											<option value="Times Square Store 時代廣場">Times Square Store 時代廣場</option>-->
-											<option value="Star House 星光行">Star House 星光行</option>
-											<!--<option value="Plaza Hollywood 荷里活廣場">Plaza Hollywood 荷里活廣場</option>-->
-											<option value="Hong Kong Station 香港站">Hong Kong Station 香港站</option>
-											<!--<option value="AEON Whampoa Garden 黃埔 AEON">AEON Whampoa Garden 黃埔 AEON</option>-->
-											<!--<option value="Telford Plaza 德福廣場">Telford Plaza 德福廣場</option>
-											<option value="Mira Place One 美麗華廣場">Mira Place One 美麗華廣場</option>-->
-										</select>
+				                    </div>
+				                    <div class="" style="width: 415px; height: 712px; float: none; clear: both; transform: scale(0.7) translate(-50%, 0); transform-origin: top left; position: relative; left: 50%;">
+										<section id="renderedCanvas">
+											<img src="https://tools.propelrr.com/assets/campaigns/delseyhkcampaign/img/selfie-screen.png" class="img-backdrop">
+											<div class="image-result-section">
+												<div><img class="imag-croppie-result"></div>
+											</div>
+											<span id="upload-demo"></span>
+											<div class="meme-text-circle">
+												<span></spam>
+											</div>		
+										</section>		
 									</div>
-									<div class="input-wrap captionfield">
-										<label>Caption *</label>
-										
-										<textarea colspan="6" rowspan="6" maxlength="50" name="captionText" id="captionText" onkeydown="this.value = removeEmojis(this.value); limitText(this.form.captionText,this.form.countdown,50);"  onkeyup="this.value = removeEmojis(this.value); limitText(this.form.captionText,this.form.countdown,50);"  onchange="this.value = removeEmojis(this.value); limitText(this.form.captionText,this.form.countdown,50);" onkeypress="this.value = removeEmojis(this.value); limitText(this.form.captionText,this.form.countdown,50);" onpaste="this.value = removeEmojis(this.value); limitText(this.form.captionText,this.form.countdown,50);" onpropertychange="this.value = removeEmojis(this.value); limitText(this.form.captionText,this.form.countdown,50);"></textarea>
-										<p style="font-size: 14px; text-style: italic; margin-top: 5px;">Must include #BackToSchoolwithDelsey #DelseyHK</p>
-										<p class="error-message"> This field is required*</p>
-										<p class="caption-info"> <span class="limit-field"><input readonly type="text" name="countdown" class="countdown topMemeText" size="3" value="50">characters left.</span></p><br>
-									</div>
-									<div class="input-wrap text-center"> 
-										<input type="submit" id="submit-btn" class="btn" name="" value="Submit">
-										<p style="font-size: 14px; text-style: italic; text-align:left; margin-top: 15px;">By submitting your entry, you agree that it will be featured and shared on Delsey HK’s gallery and Facebook page.</p>
-									</div>
-								</div>
-								<div class="fl-right w50 w60">
-									<section id="renderedCanvas">
-										<img src="https://tools.propelrr.com/assets/campaigns/delseyhkcampaign/img/selfie-screen.png" class="img-backdrop">
-										<div class="image-result-section">
-											<div><img class="imag-croppie-result"></div>
+									<div class="next-wrap" style="margin-top: -180px;">
+					                    <div class="input-wrap">
+											<label>Preferred Store to Redeem Discount</label>
+											<select name="store" id="coupon_store">
+												<!--<option value="Mody Road Store 麼地道">Mody Road Store 麼地道</option>
+												<option value="Parklane Store 柏麗購物大道">Parklane Store 柏麗購物大道</option>
+												<option value="Times Square Store 時代廣場">Times Square Store 時代廣場</option>-->
+												<option value="Star House 星光行">Star House 星光行</option>
+												<!--<option value="Plaza Hollywood 荷里活廣場">Plaza Hollywood 荷里活廣場</option>-->
+												<option value="Hong Kong Station 香港站">Hong Kong Station 香港站</option>
+												<!--<option value="AEON Whampoa Garden 黃埔 AEON">AEON Whampoa Garden 黃埔 AEON</option>-->
+												<!--<option value="Telford Plaza 德福廣場">Telford Plaza 德福廣場</option>
+												<option value="Mira Place One 美麗華廣場">Mira Place One 美麗華廣場</option>-->
+											</select>
 										</div>
-										<span id="upload-demo"></span>
-										<div class="meme-text-circle">
-											<span></spam>
-										</div>		
-									</section>		
+										<div class="input-wrap captionfield">
+											<label>Caption *</label>
+											
+											<textarea colspan="6" rowspan="6" maxlength="50" name="captionText" id="captionText" onkeydown="this.value = removeEmojis(this.value); limitText(this.form.captionText,this.form.countdown,50);"  onkeyup="this.value = removeEmojis(this.value); limitText(this.form.captionText,this.form.countdown,50);"  onchange="this.value = removeEmojis(this.value); limitText(this.form.captionText,this.form.countdown,50);" onkeypress="this.value = removeEmojis(this.value); limitText(this.form.captionText,this.form.countdown,50);" onpaste="this.value = removeEmojis(this.value); limitText(this.form.captionText,this.form.countdown,50);" onpropertychange="this.value = removeEmojis(this.value); limitText(this.form.captionText,this.form.countdown,50);"></textarea>
+											<p style="font-size: 14px; text-style: italic; margin-top: 5px;">Must include #BackToSchoolwithDelsey #DelseyHK</p>
+											<p class="error-message"> This field is required*</p>
+											<p class="caption-info"> <span class="limit-field"><input readonly type="text" name="countdown" class="countdown topMemeText" size="3" value="50">characters left.</span></p><br>
+										</div>
+										<div class="input-wrap text-center"> 
+											<input type="submit" id="submit-btn" class="btn" name="" value="Submit">
+											<p style="font-size: 14px; text-style: italic; text-align:left; margin-top: 15px;">By submitting your entry, you agree that it will be featured and shared on Delsey HK’s gallery and Facebook page.</p>
+										</div>
+									</div>
 								</div>
+								
 							</div>						
 						</form>
 						<form id="second-form" method="post" action="" class="redeem-form hideMe">
@@ -506,7 +532,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script src="https://tools.propelrr.com/assets/campaigns/delseyhkcampaign/js/croppie.min.js"></script>
 <script src="https://tools.propelrr.com/assets/campaigns/delseyhkcampaign/js/html2canvas.js"></script>
 <script src="https://foliotek.github.io/Croppie/bower_components/exif-js/exif.js"></script>
-<script src="https://tools.propelrr.com/assets/campaigns/delseyhkcampaign/js/custom.js"></script>
+<!-- <script src="https://tools.propelrr.com/assets/campaigns/delseyhkcampaign/js/custom.js"></script> -->
 <script type="text/javascript">
 	
 	$(document).ready(function(){
