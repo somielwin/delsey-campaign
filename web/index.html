@@ -314,6 +314,10 @@
 		border-top: 8px solid #333;
    }
 
+   .popup-wrap.active {
+   	z-index: 2000;
+   }
+
 
 </style>
 <script type="text/javascript">
@@ -529,7 +533,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 										<input type="tel" id="contact-num" name="contact-num" placeholder="" maxlength="15" onchange="this.setAttribute('value', this.value);"/>
 									</div>
 
-									<div class="input-wrap full">
+									<div class="input-wrap full select-arrow-ios">
 										<label>Preferred Store</label>
 										<select name="store" id="store">
 											<!--<option value="Mody Road Store 麼地道">Mody Road Store 麼地道</option>
